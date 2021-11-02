@@ -2,7 +2,7 @@ package com.cydeo.day1;
 
 import java.sql.*;
 
-public class TestConnection {
+public class Test_Oracle_Connection {
 
 /*
      *  host : 3.93.163.26

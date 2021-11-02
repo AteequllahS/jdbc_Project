@@ -14,6 +14,11 @@ public class D01_Navigating_ResultSet {
 
             Statement stmt = connect.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
+            // Resultset use cursor or pointer to navigate through the rows by default the pointer is at a location known as BeforeFirst location
+            // meaning right before first row
+            // in order to move to the first row, we need to call next() method
+            // everytime you call next() method, it will jump next row
+            // you can use getString(column name) method to get the cell value
             ResultSet rs = stmt.executeQuery("SELECT * FROM REGIONS");
 
 /*
