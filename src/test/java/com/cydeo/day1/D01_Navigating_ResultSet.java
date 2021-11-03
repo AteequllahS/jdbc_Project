@@ -13,7 +13,6 @@ public class D01_Navigating_ResultSet {
             Connection connect = DriverManager.getConnection(url, username, password);
 
             Statement stmt = connect.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-
             // Resultset use cursor or pointer to navigate through the rows by default the pointer is at a location known as BeforeFirst location
             // meaning right before first row
             // in order to move to the first row, we need to call next() method
