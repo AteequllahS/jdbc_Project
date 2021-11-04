@@ -50,6 +50,10 @@ public class D01_Navigating_ResultSet {
             rs.previous(); // as there is nothing after last in this example, so go one step up
             System.out.println(rs.getString("REGION_ID") + " "+ rs.getString("REGION_NAME") );
 
+            //closing all
+            rs.close();
+            stmt.close();
+            connect.close();
 
         } catch (SQLException e) {
             System.out.println("Error Has Occurred " + e.getMessage());

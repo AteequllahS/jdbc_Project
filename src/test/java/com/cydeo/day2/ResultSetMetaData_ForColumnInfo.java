@@ -34,6 +34,11 @@ public class ResultSetMetaData_ForColumnInfo {
             }
 
 
+            //closing all
+            rs.close();
+            stmt.close();
+            conn.close();
+
         } catch (SQLException e) {
             System.out.println("connection failed : "+ e.getMessage());
         }

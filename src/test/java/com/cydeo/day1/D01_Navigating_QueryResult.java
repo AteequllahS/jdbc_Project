@@ -51,6 +51,11 @@ public class D01_Navigating_QueryResult {
             rs.previous(); // WE cant go to previous row if we set the forward next() method.
 
 
+            //closing all
+            rs.close();
+            stmt.close();
+            connect.close();
+
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Error Has Occurred " + e.getMessage());
