@@ -37,20 +37,20 @@ public class DB_Util {
     /**
      * Create connection method , just checking one connection successful or not
      */
-//    public static void createConnection(){
-//
-//        String url      = ConfigReader.read("hr.database.url") ;
-//        String username = ConfigReader.read("hr.database.username") ;
-//        String password = ConfigReader.read("hr.database.password") ;
-////        try {
-////            con = DriverManager.getConnection(url , username, password) ;
-////            System.out.println("CONNECTION SUCCESSFUL");
-////        } catch (Exception e) {
-////            System.out.println("CONNECTION HAS FAILED " + e.getMessage() );
-////        }
-//        createConnection(url, username, password);
-//
-//    }
+    public static void createConnection(){
+
+        String url      = ConfigReader.read("hr.database.url") ;
+        String username = ConfigReader.read("hr.database.username") ;
+        String password = ConfigReader.read("hr.database.password") ;
+//        try {
+//            con = DriverManager.getConnection(url , username, password) ;
+//            System.out.println("CONNECTION SUCCESSFUL");
+//        } catch (Exception e) {
+//            System.out.println("CONNECTION HAS FAILED " + e.getMessage() );
+//        }
+        createConnection(url, username, password);
+
+    }
 
 
     /**
