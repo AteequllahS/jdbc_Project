@@ -1,9 +1,8 @@
-package com.cydeo.day1;
+package com.cydeo.day2;
 
 import com.cydeo.utility.ConfigReader;
 import com.cydeo.utility.DB_Util;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
